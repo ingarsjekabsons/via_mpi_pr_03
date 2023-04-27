@@ -14,8 +14,20 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow ME to use your location. MUAHAHA"
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.rnmaps",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDv6Jpe8dbdiKIXUR5sxJCXmu0i7f9a-y0"
+      }
     },
     "android": {
       "adaptiveIcon": {
